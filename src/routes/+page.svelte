@@ -7,12 +7,12 @@ The material is licensed under the <a href="https://creativecommons.org/licenses
 To get started, read and follow all steps below:
 <ol>
   <li>
-    <a class="link-secondary" href="/instructions/initial_setup">
+    <a class="link-secondary" href="/instructions#initial_setup">
       Initial setup
     </a>
   </li>
   <li>
-    <a class="link-secondary" href="/instructions">
+    <a class="link-secondary" href="/instructions#working_on_exercise">
       Instructions for working on the exercises
     </a>
   </li>
