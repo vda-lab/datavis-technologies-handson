@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Data visualisation technologies - hands on</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/initialsetup">Initial setup</a>
+        <a class="nav-item nav-link active" href="/instructions">Instructions</a>
+        <a class="nav-item nav-link active" href="/exercises">Exercises</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+<slot />
+</div>

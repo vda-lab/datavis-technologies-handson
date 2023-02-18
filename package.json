@@ -13,8 +13,5 @@
 		"svelte": "^3.54.0",
 		"vite": "^4.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@roxi/routify": "^2.18.11"
-	}
+	"type": "module"
 }
