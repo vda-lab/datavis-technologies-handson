@@ -19,3 +19,7 @@
   <div class="container-fluid">
 <slot />
 </div>
+
+<footer class="text-lg-start bg-light text-muted fixed-bottom">
+  (c) 2023 - Jelmer Bot, Jannes Peeters & Jan Aerts.
+</footer>
