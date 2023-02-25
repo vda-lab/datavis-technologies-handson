@@ -1,15 +1,10 @@
 <script>
 export let data;
-
-const editUrl = (url) => {
-    return url.replace("/src/routes/","").replace("+page.svelte","")
-}
+$: console.log(data)
 </script>
 
 <h2>Exercises</h2>
-<ul>
-{#each data.pages as [page, module]}
-  <!-- <h2>{page}</h2> -->
-  <li><a href={editUrl(page)}>{editUrl(page).replace("exercises/","")}</a></li>
-{/each}
-</ul>
+<ol>
+<li><a href="./exercises/htmlcssjavascript/">HTML, CSS and javascript</a></li>
+<li><a href="./exercises/simple_visualisation/">Simple visualisation</a></li>
+</ol>
