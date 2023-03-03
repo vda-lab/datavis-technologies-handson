@@ -1,11 +1,11 @@
 .container-fluid {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 .output {
-    padding: 5px;
-    border: 1px solid black;
+	padding: 5px;
+	border: 1px solid black;
 }
