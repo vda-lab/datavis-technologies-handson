@@ -13,6 +13,8 @@ const pages = Object.keys(import.meta.glob("/src/routes/**/+page.svelte"))
   // Strip `/src/routes` from begin and `/+page.svelte` from end
   .map((page) => page.replace("/src/routes", "").replace("/+page.svelte", ""));
 
+console.log(pages)
+
 // Convert into hierarchy { folder: {name, url, sub_folder: {...}}, ...}
 const hierarchy = pages.reduce(
   (agg, page) => {
@@ -28,11 +30,13 @@ const hierarchy = pages.reduce(
           url: page,
         };
       }
+      // console.log(folder)
       return sub_agg[folder];
     }, agg);
     return agg;
   },
-  { name: "Home", url: "/" }
+  {}
+  // { name: "Home", url: "/" }
 );
 
 // Convert into { url: { next: {name, url}, prev: {name, url}} structure
