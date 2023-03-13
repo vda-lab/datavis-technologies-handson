@@ -1,10 +1,11 @@
 <script>
+  import CC from "$lib/ui/CodeInline.svelte";
   import Exercise from "./Exercise.svelte";
 </script>
 
 <h3>Exercise 2</h3>
 <p>
-  Open the <code>./Exercise.svelte</code> file for this exercise and add headers
+  Open the <CC code={`./Exercise.svelte`} /> file for this exercise and add headers
   of all sizes. Your output should look like this:
 </p>
 

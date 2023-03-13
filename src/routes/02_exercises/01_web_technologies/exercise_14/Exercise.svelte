@@ -2,7 +2,7 @@
   let current = "";
 </script>
 
-<!-- We will cover buttons in week 7! -->
+<!-- We will cover buttons later on! -->
 <button class="btn btn-secondary" on:click={() => (current = "messi")}>
   Messi
 </button>

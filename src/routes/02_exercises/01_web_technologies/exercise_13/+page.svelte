@@ -17,7 +17,7 @@
 <Code
   language="svelte"
   code={`{#each mylist as item}
-...
+  ...
 {/each}`}
 />
 
@@ -32,8 +32,9 @@
   > for more information on this.
 </p>
 
+<hr />
 <p>
-  In this folder's <code>./Exercise.svelte</code>, use an <code>each</code> block
+  In this folder's <CC code={`./Exercise.svelte`} /> use an <code>each</code> block
   to make an unordered list of the soccer players in the list. Each item in the list
   should look like:
 </p>

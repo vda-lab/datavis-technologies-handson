@@ -1,7 +1,8 @@
 <h1>Data visualisation technologies - Hands on</h1>
-<img src="/air_quality_cropped.jpeg" width="600px" alt="hero"/>
+<img src="/air_quality_cropped.jpeg" width="600px" alt="hero" />
 <p>
   This website with exercises accompanies the material available at <a
+    class="link-primary"
     href="https://vda-lab.gitlab.io/datavis-technologies"
   >
     https://vda-lab.gitlab.io/datavis-technologies
@@ -14,4 +15,7 @@
 </p>
 <img src="/ccbync.png" alt="ccby" /> (c) Jelmer Bot, Jan Aerts. 2022-2023
 
+<hr />
+
+<h2>Contents</h2>
 <!-- Child list and navigation added by layout -->

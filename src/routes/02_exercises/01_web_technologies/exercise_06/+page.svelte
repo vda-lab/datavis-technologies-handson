@@ -29,8 +29,10 @@
   <CC language="html" code="<style></style>"/>-tags!
 </p>
 
+<hr/>
+
 <p>
-  Add a style element this folder's <code>./Exercise.svelte</code> that changes the font 
+  Add a style element this folder's <CC code={`./Exercise.svelte`} /> that changes the font 
   and text size, and sets the text color to steelblue. In addition, give the 
   word really a different color from the other words.
 </p>

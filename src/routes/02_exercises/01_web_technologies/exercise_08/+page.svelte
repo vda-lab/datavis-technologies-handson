@@ -23,10 +23,9 @@ console.log(myList[1]);`}
 />
 
 <p>
-  It is also possible to append or remove items from a list using the <code
-    >.push()</code
-  >
-  and <code>.pop()</code> member functions.
+  It is also possible to append or remove items from a list using the
+  <CC language="javascript" code="myList.push()" /> and
+  <CC language="javascript" code="myList.pop()" /> member functions.
 </p>
 
 <p>
@@ -67,12 +66,11 @@ const student = { name, number };`}
 <Code language="javascript" code={`const { name } = student;`} />
 
 <p>
-  An important thing to realize is, although these variables were defined with <code
-    >const</code
-  >, it is possible to change values within the list or properties of the
-  object. There is a fundamental difference in changing a list's or object's
-  content and assigning a different list or object to a variable! So, updating
-  values is allowed:
+  An important thing to realize is, although these variables were defined with
+  <CC language="javascript" code="const" />, it is possible to change values
+  within the list or properties of the object. There is a fundamental difference
+  in changing a list's or object's content and assigning a different list or
+  object to a variable! So, updating values is allowed:
 </p>
 
 <Code
@@ -96,6 +94,8 @@ student = {name: 'Not Allowed'};`}
   change the value of a constant variable that contains a number, but you can
   change the content of a list in a constant variable!
 </p>
+
+<hr />
 
 <p>
   Create an object containing your name and a list of your favourite things.

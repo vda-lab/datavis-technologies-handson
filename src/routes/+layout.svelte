@@ -34,7 +34,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      {#each Object.values(hierarchy) as page}
+      {#each Object.values(hierarchy).slice(2) as page}
         <a
           class="nav-item nav-link"
           class:active={url.includes(page.url)}

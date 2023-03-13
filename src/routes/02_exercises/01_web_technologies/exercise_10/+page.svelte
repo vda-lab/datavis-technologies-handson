@@ -34,18 +34,22 @@
   In this variant, which uses <a
     target="_blank"
     rel="noreferrer"
+    class="link-primary"
     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment"
     >object destructuring</a
-  >, you do not import the full module defined in <code>a.js</code> but just the
+  >, you do not import the full module defined in <CC code="a.js" /> but just the
   individual functions and variables that you want to use. You will see both variants
   in this course, but remember, Svelte components should be imported without curly
   braces and individual functions or variables from javascript files should be imported
   with curly braces.
 </p>
 
+<hr />
+
 <p>
   Import the components of Exercise 3 and 2 and use them inside a <CC
     code={`<div></div>`}
+    language="html"
   /> tag so that Exercise 3's component is above Exercise 2's component.
 </p>
 

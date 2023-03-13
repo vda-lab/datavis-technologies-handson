@@ -29,15 +29,14 @@
 />
 <Code
   language="javascript"
-  code={`
-const add = (x, y) => x + y;`}
+  code={`const add = (x, y) => x + y;`}
 />
 
 <p>
   When you use brackets (<CC code={`\{ \}`} />) in the inline version, you have
   to specify a return value explicitly. If you do not use brackets (<CC
     code={`\{ \}`}
-  />), the value after the arrow (<code>=></code>) is returned automatically.
+  />), the value after the arrow (<CC code="=>" />) is returned automatically.
 </p>
 
 <p>
@@ -57,13 +56,13 @@ const add = (x, y) => x + y;`}
   >. Scope always depends on where variables and functions are defined! For
   example, in a Svelte component, variables that are defined directly in the <CC
     code={`<script> </script>`}
+    language="html"
   />-tag have a global scope. They can be accessed by all functions defined in
   the component. Variables that are defined in a function can only be accessed
   within that function, or by functions that are defined within that function.
-  So, in this example below, <code>enabled</code> can be accessed within the
-  <code>add()</code>
-  function, but <code>x</code> and <code>y</code> can not be accessed outside the
-  add function:
+  So, in this example below, <CC code={`enabled`} /> can be accessed within the
+  <CC code="add()" language="javascript" /> function, but <CC code={`x`} /> and
+  <CC code={`y`} /> can not be accessed outside the add function:
 </p>
 
 <Code
@@ -85,9 +84,9 @@ function add(x, y) {
     >higher-order functions</a
   >, i.e, functions that return a function. In those cases, the variables
   defined in the outer function can be used in the inner function. For example,
-  here we defined a <code>clamper()</code> function that takes a minimum and maximum
-  value and returns a function that clamps the number it is given to the specified
-  range:
+  here we defined a <CC code="clamper()" language="javascript" /> function that takes
+  a minimum and maximum value and returns a function that clamps the number it is
+  given to the specified range:
 </p>
 
 <Code
@@ -101,12 +100,18 @@ console.log(clamp(2));`}
 />
 
 <p>
-  In this example, min and max are local to <code>clamper()</code> but they are
-  accessible in the inline-function defined in <code>clamper()</code>. In the
-  next exercise group, we will cover d3.js, which uses this construction a lot.
-  Fortunately, using functions like these is a lot simpler than writing them!
-  So, it is ok if this example was confusing to you.
+  In this example, min and max are local to <CC
+    code="clamper()"
+    language="javascript"
+  /> but they are accessible in the inline-function defined in <CC
+    code="clamper()"
+    language="javascript"
+  />. In the next exercise group, we will cover d3.js, which uses this
+  construction a lot. Fortunately, using functions like these is a lot simpler
+  than writing them! So, it is ok if this example was confusing to you.
 </p>
+
+<hr />
 
 <p>
   Define a function that computes the circumference of a sphere from a radius.
