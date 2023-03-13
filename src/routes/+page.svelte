@@ -1,4 +1,5 @@
 <h1>Data visualisation technologies - Hands on</h1>
+<img src="/air_quality_cropped.jpeg" width="600px" alt="hero"/>
 <p>
   This website with exercises accompanies the material available at <a
     href="https://vda-lab.gitlab.io/datavis-technologies"
@@ -12,8 +13,4 @@
 </p>
 <img src="/ccby.png" alt="ccby" />
 
-<hr />
-
-<h2>Contents</h2>
-<p>TODO: add description</p>
 <!-- Child list and navigation added by layout -->
