@@ -14,6 +14,7 @@
 
 <Code language="svelte" code={`<p class:myClassName={condition} />`} />
 
+<hr />
 <p>
   Define a class that changes the background of the button when it is assigned
   and assign it to only the last-clicked button. No button should have the class

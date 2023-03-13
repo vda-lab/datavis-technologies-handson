@@ -52,9 +52,11 @@ Now, in a parent component we can use component B:
 </p>
 
 <p>
-  Define a component property called answer in this folder's <code>./Exercise_child.svelte</code
-  >, import <code>./Exercise_child.svelte</code> in <code>./Exercise.svelte</code>,
-  and use the child component with the value 42 as the
+  Define a component property called answer in this folder's <code
+    >./Exercise_child.svelte</code
+  >, import <code>./Exercise_child.svelte</code> in
+  <code>./Exercise.svelte</code>, and use the child component with the value 42
+  as the
   <i>answer to life the universe and everything</i>.
 </p>
 

@@ -1,4 +1,5 @@
 <script>
+  import CC from "$lib/ui/CodeInline.svelte";
   import Code from "$lib/ui/CodeBlock.svelte";
   import Exercise from "./Exercise.svelte";
 </script>
@@ -34,15 +35,18 @@ and (2) mutable variables that can change value:
 <p>
   We recommend that you define all your variables as constant to start with.
   Only make them mutable when it is needed. In old code, you may see variables
-  initialized with the <code>var</code> keyword. This is a sign that the code
-  you are looking at is old and you should take care when using it! Do not use
-  the <code>var</code> keyword in code for these exercises.
+  initialized with the <CC code={`var`} language="javascript" /> keyword. This is
+  a sign that the code you are looking at is old and you should take care when using
+  it! Do not use the <CC code={`var`} language="javascript" /> keyword in code for
+  these exercises.
 </p>
 
+<hr />
+
 <p>
-  Define a constant variable with your lucky number as value in this folder's <code
-    >./Exercise.svelte</code
-  >
+  Define a constant variable with your lucky number as value in this folder's <CC
+    code={`./Exercise.svelte`}
+  />
   and complete the message with the variable's value.
   <i>
     Hint: see the hello-world example in the introduction of the exercise group!

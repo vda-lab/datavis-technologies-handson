@@ -28,8 +28,10 @@
   required to.
 </p>
 
+<hr />
+
 <p>
-  Make the two messages in <code>Exercise.svelte</code> appear below each other
+  Make the two messages in <CC code={`./Exercise.svelte`} /> appear below each other
   by wrapping them in <CC language="html" code="<div></div>" />-tags.
 </p>
 

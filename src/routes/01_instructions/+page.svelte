@@ -1,35 +1,84 @@
+<script>
+  import CC from "$lib/ui/CodeInline.svelte";
+</script>
+
 <h1>Instructions</h1>
 <h2 id="initial_setup">Initial Setup</h2>
-<p>You'll have to create an account on github (<a href="http://github.com">http://github.com</a>) first. This will make it easier to get everything organised.</p>
+<p>
+  You'll have to create an account on github (<a
+    target="_blank"
+    rel="noreferrer"
+    class="link-primary"
+    href="http://github.com">http://github.com</a
+  >) first. This will make it easier to get everything organised.
+</p>
 
-<p>We have prepared a project on github so that the right structures are set up and the necessary boilerplate code is ready to go. To get set up:</p>
+<p>
+  We have prepared a project on github so that the right structures are set up
+  and the necessary boilerplate code is ready to go. To get set up:
+</p>
 
 <h3>On github</h3>
 <ul>
-    <li>Log into github</li>
-    <li>Go to <a href="http://github.com/vda-lab/datavis-technologies-handson">http://github.com/vda-lab/datavis-technologies-handson</a></li>
-    <li>Click on "Fork"</li>
+  <li>Log into github</li>
+  <li>
+    Go to <a
+      target="_blank"
+      rel="noreferrer"
+      class="link-primary"
+      href="http://github.com/vda-lab/datavis-technologies-handson"
+      >http://github.com/vda-lab/datavis-technologies-handson</a
+    >
+  </li>
+  <li>Click on "Fork"</li>
 </ul>
 
 <h3>On stackblitz</h3>
 <ul>
-    <li>Log in using your github account</li>
-    <li>Click on "repositories" in the left and then on the "datavis-technologies-handson"</li>
+  <li>Log in using your github account</li>
+  <li>
+    Click on "repositories" in the left and then on the
+    "datavis-technologies-handson"
+  </li>
 </ul>
 
-<p>We won't go into running a sveltekit application locally, as is covered by the stackblitz system. If you would like to try it, however, you can find the necessary information on the sveltekit website at http://kit.svelte.dev.</p>
+<p>
+  We won't go into running a sveltekit application locally, as is covered by the
+  stackblitz system. If you would like to try it, however, you can find the
+  necessary information on the sveltekit website at http://kit.svelte.dev.
+</p>
 
 <h2 id="directory_structure">Directory structure</h2>
-<p>The actual svelte sketches are located under the <code>src/routes</code> directory. This structure is mandatory, and should <emph>not</emph> be changed. The <code>src/routes</code> directly maps to the URL structure: any subdirectory will be accessible from your webbrowser.</p>
+<p>
+  The actual svelte sketches are located under the <CC code="/src/routes" />
+  directory. This structure is mandatory, and should <emph>not</emph> be
+  changed. The <CC code="/src/routes" /> directly maps to the URL structure: any
+  subdirectory will be accessible from your web browser.
+</p>
 
-<p>For example, <code>src/routes/01_web_technologies/ex_1/</code> maps to <code>http://some_ip/01_web_technologies/ex_1</code>.</p>
+<p>
+  For example, <CC code="/src/routes/01_web_technologies/exercise_01" /> maps to
+  <CC code="http://some_ip/01_web_technologies/exercise_01" />.
+</p>
 
-<p>The actual <emph>page</emph> you get to see at that URL gets its contents from the file named <code>+page.svelte</code> in that particular directory. Note that the file <b>must</b> be named <code>+page.svelte</code>.</p>
+<p>
+  The actual <emph>page</emph> you get to see at that URL gets its contents from
+  the file named <CC code="+page.svelte" /> in that particular directory. Note that
+  the file <b>must</b> be named <CC code="+page.svelte" />.
+</p>
 
-<p><b>IMPORTANT</b>: You will actually <b>not</b> be changing the <code>+page.svelte</code> files, but the <code>Exercise.svelte</code> files in these subdirectories.</p>
+<p>
+  <b>IMPORTANT</b>: You will actually <b>not</b> be changing the
+  <CC code="+page.svelte" />
+  files, but the<CC code="Exercise.svelte" /> files in these subdirectories.
+</p>
 
 <h2 id="working_on_exercise">Working on the Exercises</h2>
-<p>When you open the repository on stackblitz, it will compile the code and start a webserver (probably on port 5173, but this might vary.) You'll see output generated similar to this:</p>
+<p>
+  When you open the repository on stackblitz, it will compile the code and start
+  a webserver (probably on port 5173, but this might vary.) You'll see output
+  generated similar to this:
+</p>
 
 <pre>❯ npm install && npm run dev
 warn preInstall No description field
@@ -76,10 +125,15 @@ Forced re-optimization of dependencies
 package                         files     time    avg
 datavis-technologies-handson        3   28.7ms  9.6ms</pre>
 
-<p>Notice the line saying <code>Local: http://localhost:5173/</code>: it tells you the port to connect to. You might see a button to open a preview, or have to open a new browser tab on that particular port yourself.</p>
+<p>
+  Notice the line saying <CC code="Local: http://localhost:5173/" />: it tells
+  you the port to connect to. You might see a button to open a preview, or have
+  to open a new browser tab on that particular port yourself.
+</p>
 
-<p>As you go through the contents of that webpage, switch back to stackblitz to edit the <code>Exercise.svelte</code> file for each exercise.</p>
-
-
+<p>
+  As you go through the contents of that webpage, switch back to stackblitz to
+  edit the <CC code="Exercise.svelte" /> file for each exercise.
+</p>
 
 <!-- Navigation added by layout -->
