@@ -76,8 +76,23 @@
 <h2 id="working_on_exercise">Working on the Exercises</h2>
 <p>
   When you open the repository on stackblitz, it will compile the code and start
-  a webserver (probably on port 5173, but this might vary.) You'll see output
-  generated similar to this:
+  a webserver (probably on port 5173, but this might vary.)
+</p>
+
+<p>
+  <b>IMPORTANT</b> - You might get an error referring to <code>src/lib/highlight.js</code>.
+  This is an issue with stackblitz: it wants to start the application before it has 
+  finished loading all dependencies. If that happens:
+</p>
+<ol>
+<li>Click within the terminal that displays the error message.</li>
+<li>Press Control-C to stop the process.</li>
+<li>Type <code>npm run build</code>.</li>
+<li>Type <code>npm run dev</code>.</li>
+</ol>
+
+<p>
+  You'll see output generated similar to that below, and be ready to go.
 </p>
 
 <pre>❯ npm install && npm run dev
