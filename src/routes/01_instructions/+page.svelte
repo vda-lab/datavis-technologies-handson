@@ -92,7 +92,8 @@
 </ol>
 
 <p>
-  You'll see output generated similar to that below, and be ready to go.
+  You might have to do this every time you start stackblitz. You'll see output generated 
+  similar to that below, and be ready to go.
 </p>
 
 <pre>❯ npm install && npm run dev
