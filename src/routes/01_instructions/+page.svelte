@@ -3,6 +3,8 @@
 </script>
 
 <h1>Instructions</h1>
+This document explains how to get started with the exercises on this website.
+
 <h2 id="initial_setup">Initial Setup</h2>
 <p>
   You'll have to create an account on github (<a
@@ -35,9 +37,18 @@
 
 <h3>On stackblitz</h3>
 <ul>
-  <li>Log in using your github account</li>
+  <li>Connect your GitHub account.</li>
   <li>
-    Click on "repositories" in the left and then on the
+    Go to the <a
+      target="_blank"
+      rel="noreferrer"
+      class="link-primary"
+      href="https://stackblitz.com/codeflow">https://stackblitz.com/codeflow</a
+    > and click on "Join the Codeflow Beta"
+  </li>
+  <li>Go back to the main Stackblitz dashboard.</li>
+  <li>
+    Click on "repositories" in the left side-bar and then on the
     "datavis-technologies-handson"
   </li>
 </ul>
@@ -45,7 +56,12 @@
 <p>
   We won't go into running a sveltekit application locally, as is covered by the
   stackblitz system. If you would like to try it, however, you can find the
-  necessary information on the sveltekit website at http://kit.svelte.dev.
+  necessary information on the sveltekit website at <a
+    target="_blank"
+    rel="noreferrer"
+    class="link-primary"
+    href="http://kit.svelte.dev">http://kit.svelte.dev</a
+  >.
 </p>
 
 <h2 id="directory_structure">Directory structure</h2>
@@ -76,8 +92,13 @@
 <h2 id="working_on_exercise">Working on the Exercises</h2>
 <p>
   When you open the repository on stackblitz, it will compile the code and start
-  a webserver (probably on port 5173, but this might vary.) You'll see output
-  generated similar to this:
+  a webserver (probably on port 5173, but this might vary.)
+</p>
+
+<p>
+  <b>IMPORTANT</b> - If you get an error referring to
+  <code>src/lib/highlight.js</code>. Then you are not using Codeflow in
+  Stackblitz, go back to the initial setup to join the Codeflow beta.
 </p>
 
 <pre>❯ npm install && npm run dev
@@ -126,14 +147,25 @@ package                         files     time    avg
 datavis-technologies-handson        3   28.7ms  9.6ms</pre>
 
 <p>
-  Notice the line saying <CC code="Local: http://localhost:5173/" />: it tells
-  you the port to connect to. You might see a button to open a preview, or have
-  to open a new browser tab on that particular port yourself.
+  Notice the line saying <CC code="➜  Local: http://localhost:5173/" />: it
+  tells you the port to connect to. Clicking on that link while holding the
+  <CC code="Ctrl" /> keyboard button opens a preview page. You might also see a button
+  to open a preview in a notifications towards to lower right of the screen.
 </p>
 
 <p>
   As you go through the contents of that webpage, switch back to stackblitz to
-  edit the <CC code="Exercise.svelte" /> file for each exercise.
+  edit the <CC code="Exercise.svelte" /> files for each exercise.
 </p>
+
+<h2 id="directory_structure">Committing your work</h2>
+
+Before you close stackblitz, you have to save yourwork. To do that, click the
+source control button in the left side bar (the one below the search icon).
+Within that menu, you will see a tab labelled "SOURCE CONTROL". Within that tab
+files with changes are grouped together under a header "Changes". When you hover
+over that header, a "+" appears. Click that "+" to stage all changes. Then, fill
+in a message in the message block and click the "Commit & Push" button to save
+your work.
 
 <!-- Navigation added by layout -->
