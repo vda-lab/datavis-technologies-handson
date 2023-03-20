@@ -1,1 +1,1 @@
-<div class="answer" style="color: Red;">My name is <b>Harbour Kim</b></div>
+<div class="answer" style="color: Green;">My name is <b style="color :Red;">Harbour Kim</b></div>
