@@ -1,3 +1,3 @@
 <script>
-  export let answer = 42;
+export let answer = 42;
 </script>
