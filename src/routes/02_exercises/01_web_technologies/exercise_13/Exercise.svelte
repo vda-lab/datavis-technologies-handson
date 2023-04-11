@@ -11,7 +11,7 @@
 	<!-- Again I dont get why this does not work... -->
 	<ul>
 	{#each videos as players}
-		<li> players.name (players.url)</li>
+		<li> {players.name}  ({players.url})</li>
 	{/each}
 	</ul>
 </div>
