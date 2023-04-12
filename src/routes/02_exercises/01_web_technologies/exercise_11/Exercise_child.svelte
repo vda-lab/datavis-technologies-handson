@@ -1,4 +1,4 @@
 <script>
-export let answer = 42;
+export let answer;
 </script>
-<p>{answer}</p>
+<p>The answer to the universe and everything is {answer}</p>
