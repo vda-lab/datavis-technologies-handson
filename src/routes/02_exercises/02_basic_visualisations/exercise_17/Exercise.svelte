@@ -1,6 +1,6 @@
 <script>
 import { scaleLog } from 'd3-scale';
-const scale = scaleLog().domain([2, 9]).range([0,1]);
+const scale = scaleLog().domain([2, 9]).range([10,780]);
 
     // Dimensions
     const width = 800;
@@ -11,18 +11,16 @@ const scale = scaleLog().domain([2, 9]).range([0,1]);
   
     // Array
     const values = [2, 4, 6, 7, 9];
-    let log_vals = [0, 0, 0, 0, 0];
-    for ( let i = 0; i < 5; i++ ) {
-      log_vals[i] = scale(values[i]);
-};
-    
+    const mappedValues = values.map(v => scale(v));
+    //const array = [];
+    //values.forEach(abc => array.push(abc *2));
   </script>
   
   <svg viewBox="0 0 {width} {height}">
     <g transform="translate({margin.left},{margin.top})">
-        {#each log_vals as dp}
-    <circle cx={dp} cy="0" r=10 />
-  {/each}
+      {#each mappedValues as dp}
+        <circle cx={dp} cy="50" r=10 />
+      {/each}
     </g>
   </svg>
   
