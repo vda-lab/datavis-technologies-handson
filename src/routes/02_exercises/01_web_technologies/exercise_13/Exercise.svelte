@@ -8,5 +8,9 @@
 
 <div>
 	<h5>Famous soccer players:</h5>
-	<!--  -->
+	<ul>
+	{#each videos as players}
+		<li> {players.name}  ({players.url})</li>
+	{/each}
+	</ul>
 </div>
